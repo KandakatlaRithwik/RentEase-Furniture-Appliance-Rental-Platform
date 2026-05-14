@@ -1,6 +1,12 @@
 # RentEase — Complete Integration Guide
 # RentEase
-RentEase is a full-stack furniture and appliance rental platform built using the MERN stack. It includes user rentals, admin inventory management, analytics dashboards, maintenance workflows, return handling, and role-based authentication.
+RentEase is a production-ready MERN stack rental platform for managing furniture and appliance rentals with secure authentication, analytics, inventory management, and maintenance workflows.. It includes user rentals, admin inventory management, analytics dashboards, maintenance workflows, return handling, and role-based authentication.
+
+## Live Demo
+
+Frontend: https://rent-ease-furniture-appliance-renta.vercel.app
+
+Backend API: https://rentease-api-2rnd.onrender.com
 ## Project Structure
 ```
 RentEase/
@@ -26,6 +32,17 @@ Deployment:
 - Render
 - MongoDB Atlas
 ---
+## Key Features
+
+- Secure JWT-based authentication
+- Role-based access control (User/Admin)
+- Real-time rental availability checks
+- Product inventory management
+- Interactive analytics dashboard
+- Maintenance request workflow
+- Dark mode with persistent preferences
+- Responsive mobile-first UI
+- Production-ready MERN deployment
 
 ## Step 1 — Start MongoDB
 ```bash
@@ -129,7 +146,7 @@ npm start                 # starts on http://localhost:3000
 ```
 PORT=5000
 NODE_ENV=development
-MONGO_URI=mongodb://localhost:27017/rentease
+MONGO_URI=MONGO_URI=mongodb://localhost:27017/rentease
 JWT_SECRET=rentease_dev_secret_change_before_production
 JWT_EXPIRE=30d
 FRONTEND_URL=http://localhost:3000
@@ -170,3 +187,13 @@ REACT_APP_API_URL=http://localhost:5000/api
 | Charts empty | Normal until you have real orders — seeder doesn't create orders |
 | Email not sending | Leave `EMAIL_USER` empty — app works fine, logs to console instead |
 | Dark mode not persisting | Check `localStorage` key `rentease_theme` in browser DevTools |
+
+## License
+
+This project is developed for educational and portfolio purposes.
+
+## Author
+
+Rithwik Kandakatla
+
+GitHub: https://github.com/KandakatlaRithwik
