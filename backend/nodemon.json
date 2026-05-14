@@ -1,0 +1,9 @@
+{
+  "watch": ["controllers", "routes", "middleware", "models", "config", "server.js"],
+  "ignore": ["node_modules", "*.log", ".env"],
+  "ext": "js",
+  "delay": "500",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
